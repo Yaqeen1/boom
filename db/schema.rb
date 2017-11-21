@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171121152942) do
+ActiveRecord::Schema.define(version: 20171121162524) do
+
+  create_table "listings", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.text     "description"
+    t.string   "contact"
+    t.string   "location"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.decimal  "monetary",    precision: 8, scale: 2
+    t.string   "category"
+    t.string   "subcategory"
+    t.text     "tags",                                default: "--- []\n"
+    t.datetime "created_at",                                               null: false
+    t.datetime "updated_at",                                               null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

@@ -1,3 +1,4 @@
 <h1><%= @user.email %></h1>
 <p> <%= link_to "Connect with Stripe", 
 "https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_9Dysx8I9tlQaCVX3wSSf0HBWg0qSiZSo&scope=read_write" %> </p>
+<p> <%= link_to "Create a New Listing", new_user_listing_path(current_user) %></p>

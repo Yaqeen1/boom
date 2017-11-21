@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  title: MyString
+  description: MyText
+  contact: MyString
+  location: MyString
+  start_time: 2017-11-21 16:25:24
+  end_time: 2017-11-21 16:25:24
+  monetary: 9.99
+  category: MyString
+  tags: MyText
+
+two:
+  user_id: 1
+  title: MyString
+  description: MyText
+  contact: MyString
+  location: MyString
+  start_time: 2017-11-21 16:25:24
+  end_time: 2017-11-21 16:25:24
+  monetary: 9.99
+  category: MyString
+  tags: MyText
